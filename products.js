@@ -30,7 +30,7 @@ const productsData = [
     titulo: "Tutor Botánico Cilíndrico (30 cm)",
     categoria: "tutores",
     precioBase: 5500,
-    imagen: "img/tutorcilindro.jpg",
+    imagen: "img/tutorcilindro.jpeg",
     estado: "Disponible",
     descripcion: "Tutor cilíndrico envuelto en rejilla, perfecto para retener musgo y guiar el crecimiento de tus plantas trepadoras.",
     variantes: [
@@ -43,7 +43,7 @@ const productsData = [
     titulo: "Tutor Botánico con Trasera de Acetato (60 cm)",
     categoria: "tutores",
     precioBase: 7500,
-    imagen: "img/tutoracetato.jpg",
+    imagen: "img/tutoracetato.jpeg",
     estado: "Promoción Activa",
     descripcion: "Diseñado para plantas con altas demandas de humedad. La trasera de acetato minimiza la evaporación. *Compra 2 unidades e incluye 1 vara estabilizadora de regalo.*",
     variantes: [
