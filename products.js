@@ -1,5 +1,5 @@
 const productsData = [
-   {
+  {
     id: "original-copihue",
     titulo: "Ilustración Original - Copihue en Acuarela",
     categoria: "prints",
@@ -29,12 +29,12 @@ const productsData = [
     id: "tutor-cilindrico",
     titulo: "Tutor Botánico Cilíndrico (30 cm)",
     categoria: "tutores",
-    precioBase: 6500,
+    precioBase: 5500,
     imagen: "img/tutorcilindro.jpg",
     estado: "Disponible",
     descripcion: "Tutor cilíndrico envuelto en rejilla, perfecto para retener musgo y guiar el crecimiento de tus plantas trepadoras.",
     variantes: [
-      { nombre: "Estándar 30 cm", precio: 5500 }
+      { nombre: "Estándar 30 cm", precio: 5500 },
       { nombre: "Estándar 60 cm", precio: 9500 }
     ]
   },
@@ -47,7 +47,7 @@ const productsData = [
     estado: "Promoción Activa",
     descripcion: "Diseñado para plantas con altas demandas de humedad. La trasera de acetato minimiza la evaporación. *Compra 2 unidades e incluye 1 vara estabilizadora de regalo.*",
     variantes: [
-      { nombre: "30 cm con trasera de acetato", precio: 7500 }
+      { nombre: "30 cm con trasera de acetato", precio: 7500 },
       { nombre: "60 cm con trasera de acetato", precio: 11000 }
     ]
   },
