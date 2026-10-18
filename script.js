@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const message = `🌿 *¡Hola Rubenice.Dendro!* Me gustaría hacer el siguiente pedido:\n\n${itemsText}\n\n*Total estimado:* $${total.toLocaleString('es-CL')} CLP${promoText}\n\n📋 *Datos de Entrega:*\n• *Nombre:* ${name}\n• *Comuna/Ciudad:* ${city}\n• *Método:* ${delivery}\n${notes ? `• *Notas:* ${notes}` : ""}`;
 
       // Reemplaza con tu número de WhatsApp real (ej: 56912345678)
-      const phone = "56999999999"; 
+      const phone = "56971504474"; 
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       
       window.open(url, '_blank');
