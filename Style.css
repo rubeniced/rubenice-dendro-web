@@ -224,7 +224,7 @@ a {
 }
 
 .hero-character-terrarium {
-  width: 55px;
+  width: 78px;
   height: auto;
   animation: floatCharacter 4s ease-in-out infinite;
   align-self: flex-start;
