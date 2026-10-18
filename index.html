@@ -3,11 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rubenice.Dendro | Ilustración Botánica, Prints y Tutores</title>
-  <link rel="stylesheet" href="style.css">
+  
+  <!-- SEO PRINCIPAL -->
+  <title>Rubenice.Dendro — Ilustración Botánica, Prints y Accesorios</title>
+  <meta name="description" content="Tienda de ilustración botánica, acuarelas originales, prints de autor y tutores para plantas hechos a mano en Santiago, Chile.">
+  <meta name="keywords" content="ilustración botánica, acuarelas, prints, arte botánico, tutores para plantas, Santiago, Chile">
+  <meta name="author" content="Rubén / Rubenice.Dendro">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  
+  <!-- OPEN GRAPH / REDES SOCIALES (WhatsApp, Instagram, Facebook) -->
+  <meta property="og:title" content="Rubenice.Dendro — Ilustración Botánica & Accesorios">
+  <meta property="og:description" content="Piezas hechas a mano con dedicación para amantes de las plantas y la naturaleza.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo-blanco.png">
+
+  <!-- FUENTES GOOGLE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,180 +37,200 @@
   <header class="navbar">
     <div class="container nav-container">
       <a href="#" class="logo-link">
-        <img src="img/logo-blanco.png" alt="Rubenice.Dendro Logo" class="logo-img" id="logo-header">
-        <span class="logo-text">Rubenice.Dendro</span>
+        <img src="img/logo-blanco.png" alt="Rubenice.Dendro Logo" class="logo-img">
       </a>
+      
       <nav class="nav-links">
         <a href="#catalogo">Catálogo</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#faq">Preguntas Frecuentes</a>
       </nav>
-      <button class="cart-btn" id="open-cart-btn">
-        🛒 Carrito <span id="cart-count">0</span>
-      </button>
+
+      <div class="nav-right-group">
+        <div class="header-socials">
+          <a href="https://instagram.com/rubenice.dendro" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com/@rubenice.dendro" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://youtube.com/@rubenice.dendro" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <button class="cart-btn" id="open-cart-btn">
+          <i class="fa-solid fa-cart-shopping cart-icon"></i> Carrito <span id="cart-count">0</span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- HERO BANNER -->
   <section class="hero">
     <div class="container hero-content">
-      <h1 class="hero-title">Ilustración botánica, prints de autor y accesorios para amantes de las plantas</h1>
-      <p class="hero-subtitle">Piezas hechas a mano con dedicación, arte botánico y accesorios diseñados para el bienestar de tus plantas.</p>
-      <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+      <div class="hero-brand-wrapper">
+        <img src="img/logo-blanco.png" alt="Rubenice.Dendro" class="hero-logo">
+        <img src="img/mascota-1.png" alt="Mascota Terrario" class="hero-character-terrarium" onerror="this.style.display='none'">
+      </div>
+      
+      <h1 class="hero-title fuente-rock-salt-regular">Ilustración botánica, prints de autor y accesorios para amantes de las plantas</h1>
+      <p class="hero-subtitle">Piezas hechas a mano con dedicación para personas que buscan la magia, la ternura y el asombro en la naturaleza, y accesorios diseñados para el desarrollo óptimo de tus plantas.</p>
+      
+      <div class="hero-cta-wrapper">
+        <img src="img/mascota.png" alt="Shiro" class="hero-character-cta" onerror="this.style.display='none'">
+        <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+      </div>
     </div>
   </section>
 
-  <!-- CATÁLOGO Y FILTROS -->
-  <section id="catalogo" class="container section">
-    <h2 class="section-title">Catálogo de Productos</h2>
-    
-    <div class="category-filters">
-      <button class="filter-btn active" data-filter="todos">Todos</button>
-      <button class="filter-btn" data-filter="prints">Prints / Láminas</button>
-      <button class="filter-btn" data-filter="tutores">Tutores para Plantas</button>
-      <button class="filter-btn" data-filter="originales">Ilustraciones Originales</button>
-      <button class="filter-btn" data-filter="personalizados">Personalizadas</button>
-    </div>
+  <!-- CATÁLOGO DE PRODUCTOS -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <h2 class="section-title">Catálogo de Productos</h2>
+      <p class="section-desc">Explora las ilustraciones originales, prints de arte y accesorios botánicos en stock.</p>
+      
+      <div class="category-filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="originales">Ilustraciones Originales</button>
+        <button class="filter-btn" data-filter="prints">Prints / Láminas</button>
+        <button class="filter-btn" data-filter="personalizadas">Personalizadas</button>
+        <button class="filter-btn" data-filter="tutores">Tutores para Plantas</button>
+      </div>
 
-    <div class="products-grid" id="products-grid">
-      <!-- Los productos se cargan dinámicamente desde products.js -->
+      <div class="products-grid" id="products-grid"></div>
     </div>
   </section>
 
-  <!-- SECCIÓN SOBRE MÍ -->
-  <section id="sobre-mi" class="about-section">
+  <!-- SOBRE MÍ -->
+  <section class="section about-section" id="sobre-mi">
     <div class="container about-container">
-      <div class="about-image-wrapper">
-        <img src="img/ruben-sobre-mi.jpg" alt="Rubén - Rubenice.Dendro" class="about-img">
-      </div>
+      <img src="img/ruben-sobre-mi.jpg" alt="Rubén - Rubenice.Dendro" class="about-img" onerror="this.src='https://via.placeholder.com/320x400/1b1f06/b3b233?text=Rub%C3%A9n'">
       <div class="about-text">
-        <span class="tag-accent">La persona detrás de la marca</span>
+        <span class="tag-accent">La persona detrás de los pinceles y las hojas</span>
         <h2>Hola, soy Rubén</h2>
-        <p>Soy ilustrador, diseñador y amante apasionado del mundo botánico y acuático. En cada una de mis obras y accesorios busco capturar la belleza de la naturaleza y acompañar la pasión por el cuidado de las plantas.</p>
+        <p>Soy ilustrador, diseñador y amante apasionado del mundo botánico y acuático. En cada una de mis obras y accesorios busco capturar la belleza, ternura y magia de la naturaleza, y acompañar la pasión por el cuidado de las plantas.</p>
         <p>Trabajo cada pieza de forma artesanal e independiente, desde mi taller en Santiago, Chile, cuidando la calidad de cada detalle.</p>
-        <div class="social-links-about">
-          <a href="https://www.instagram.com/rubenice.dendro" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.tiktok.com/@rubenice.dendro" target="_blank" rel="noopener">TikTok</a>
-          <a href="https://www.youtube.com/@Rubenice.Dendro" target="_blank" rel="noopener">YouTube</a>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- VIDEOS Y PROCESO CREATIVO -->
-  <section class="container section">
-    <h2 class="section-title">Proceso Creativo y Consejos</h2>
-    <p class="section-desc">Conoce más sobre la elaboración de los tutores, el proceso de pintura y tips verdes en mis redes sociales.</p>
-    <div class="video-cards-grid">
-      <a href="https://www.instagram.com/rubenice.dendro" target="_blank" class="video-card">
-        <div class="video-icon">📸</div>
-        <h3>Instagram Reels</h3>
-        <p>Procesos de pintura, ilustraciones y cuidados botánicos en detalle.</p>
-      </a>
-      <a href="https://www.tiktok.com/@rubenice.dendro" target="_blank" class="video-card">
-        <div class="video-icon">🎵</div>
-        <h3>TikTok</h3>
-        <p>Tips rápidos, anécdotas verdes y avances del taller.</p>
-      </a>
-      <a href="https://www.youtube.com/@Rubenice.Dendro" target="_blank" class="video-card">
-        <div class="video-icon">▶️</div>
-        <h3>YouTube</h3>
-        <p>Contenido extendido, guías y seguimiento de cultivos.</p>
-      </a>
+  <!-- PROCESO CREATIVO -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Proceso Creativo y Consejos</h2>
+      <p class="section-desc">Entérate antes sobre el proceso de mis ilustraciones, anécdotas y tips verdes en mis redes sociales.</p>
+      
+      <div class="video-cards-grid">
+        <a href="https://instagram.com/rubenice.dendro" target="_blank" class="video-card">
+          <div class="video-icon"><i class="fa-brands fa-instagram"></i></div>
+          <h3>Instagram Reels</h3>
+          <p>Procesos de pintura, ilustraciones y cuidados botánicos en detalle.</p>
+        </a>
+        <a href="https://tiktok.com/@rubenice.dendro" target="_blank" class="video-card">
+          <div class="video-icon"><i class="fa-brands fa-tiktok"></i></div>
+          <h3>TikTok</h3>
+          <p>Tips rápidos, anécdotas verdes y avances del taller.</p>
+        </a>
+        <a href="https://youtube.com/@rubenice.dendro" target="_blank" class="video-card">
+          <div class="video-icon"><i class="fa-brands fa-youtube"></i></div>
+          <h3>YouTube</h3>
+          <p>Contenido extendido, guías y seguimiento de proyectos.</p>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="container section">
-    <h2 class="section-title">Preguntas Frecuentes</h2>
-    <div class="faq-accordion">
-      <details class="faq-item">
-        <summary>¿Cómo son los envíos y entregas?</summary>
-        <p>Realizamos envíos a todo Chile vía <strong>Starken</strong> o <strong>Blue Express</strong> por pagar. En Santiago coordinamos entregas a convenir, y contamos con <strong>entrega gratuita en la comuna de La Florida</strong>.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cómo funcionan los tutores para plantas de musgo?</summary>
-        <p>Nuestros tutores están diseñados para promover el crecimiento vertical de tus trepadoras. Contamos con modelos cilíndricos envueltos en rejilla y modelos con trasera de acetato para retener la humedad por más tiempo.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cuál es la promoción especial de tutores?</summary>
-        <p>Por la compra de 2 tutores de 60 cm, te incluimos de regalo una <strong>vara estabilizadora</strong> para darle firmeza a tu planta.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cómo vienen empaquetados los prints e ilustraciones?</summary>
-        <p>Cada print e ilustración se envía protegido con soporte rígido y empaque anti-humedad para garantizar que llegue en perfectas condiciones a tus manos.</p>
-      </details>
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary>¿Cómo son los envíos y entregas?</summary>
+          <p>Realizo envíos a todo Chile mediante Starken o Blue Express por pagar. En Santiago se coordinan entregas en puntos a convenir o mediante delivery expreso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo funcionan los tutores para plantas de musgo?</summary>
+          <p>Son tutores diseñados para favorecer el desarrollo de raíces adventicias en plantas trepadoras (como Pothos o Philodendron), manteniendo la humedad y firmeza que necesitan para desarrollar hojas más grandes.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuál es la promoción especial de tutores?</summary>
+          <p>¡Llevando 2 o más tutores cilíndricos de 60cm obtienes un descuento automático especial en tu carrito de compras!</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo vienen empaquetados los prints e ilustraciones?</summary>
+          <p>Cada lámina e ilustración original se envía cuidadosamente protegida con soporte rígido y empaque sellado libre de humedad para garantizar que llegue intacta a tus manos.</p>
+        </details>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; Rubenice.Dendro - Ilustración Botánica y Arte</p>
+      <p>© Rubenice.Dendro — Ilustración Botánica y Arte. Todos los derechos reservados 2026.</p>
       <div class="footer-socials">
-        <a href="https://www.instagram.com/rubenice.dendro" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@rubenice.dendro" target="_blank">TikTok</a>
-        <a href="https://www.youtube.com/@Rubenice.Dendro" target="_blank">YouTube</a>
+        <a href="https://instagram.com/rubenice.dendro" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://tiktok.com/@rubenice.dendro" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://youtube.com/@rubenice.dendro" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- MODAL DE DETALLE DE PRODUCTO -->
+  <!-- MODAL PRODUCTO -->
   <div class="modal" id="product-modal">
     <div class="modal-content">
       <button class="modal-close" id="close-product-modal">&times;</button>
-      <div class="modal-body" id="modal-product-body">
-        <!-- Renderizado dinámico -->
-      </div>
+      <div id="modal-product-body"></div>
     </div>
   </div>
 
-  <!-- MODAL / DRAWER DEL CARRITO Y PEDIDO -->
+  <!-- LIGHTBOX ZOOM -->
+  <div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox()">
+    <img src="" alt="Zoom" class="lightbox-img" id="lightbox-img">
+  </div>
+
+  <!-- MODAL CARRITO -->
   <div class="modal" id="cart-modal">
-    <div class="modal-content modal-cart">
+    <div class="modal-content">
       <button class="modal-close" id="close-cart-modal">&times;</button>
-      <h2>Tu Pedido</h2>
+      <h2 style="font-size:1.3rem; margin-bottom:12px; color:var(--c-white-warm);">Tu Pedido</h2>
       
-      <div id="cart-items-container" class="cart-items-list">
-        <!-- Lista de items agregados -->
+      <div class="cart-promo-banner" id="promo-notice" style="display:none;">
+        🎉 ¡Aplica Promoción Especial de Tutores!
       </div>
 
-      <div class="cart-summary">
-        <div class="cart-promo-banner" id="promo-notice" style="display: none;">
-          🎁 <span>¡Promoción activa! Incluye vara estabilizadora de regalo por tus 2 tutores de 60 cm.</span>
-        </div>
-        <div class="total-row">
-          <span>Total estimado:</span>
-          <span id="cart-total">$0 CLP</span>
-        </div>
+      <div class="cart-items-list" id="cart-items-container"></div>
+
+      <div class="total-row">
+        <span>Total estimado:</span>
+        <span id="cart-total">$0 CLP</span>
       </div>
 
-      <form id="checkout-form" class="checkout-form">
-        <h3>Datos para el envío / entrega</h3>
+      <form class="checkout-form" id="checkout-form">
+        <h3 style="font-size:0.95rem; color:var(--c-white-warm); margin-bottom:10px;">Datos para el envío / entrega</h3>
+        
         <label>
           Nombre completo:
           <input type="text" id="cust-name" required placeholder="Ej: María González">
         </label>
+
         <label>
           Comuna / Ciudad:
           <input type="text" id="cust-city" required placeholder="Ej: La Florida, Santiago">
         </label>
+
         <label>
           Método de entrega preferido:
-          <select id="cust-delivery" required>
-            <option value="Entrega Gratuita La Florida">Entrega Gratuita en La Florida</option>
-            <option value="Entrega a convenir en Santiago">Entrega a convenir en Santiago</option>
-            <option value="Envío Starken (Por pagar)">Envío Starken (A provincia/regiones)</option>
-            <option value="Envío Blue Express (Por pagar)">Envío Blue Express (A provincia/regiones)</option>
+          <select id="cust-delivery">
+            <option value="Envío a Regiones (Starken / BlueExpress)">Envío a Regiones (Starken / BlueExpress)</option>
+            <option value="Delivery Santiago">Delivery en Santiago</option>
+            <option value="Entrega a convenir">Entrega a convenir</option>
           </select>
         </label>
+
         <label>
           Comentarios o notas adicionales (opcional):
-          <textarea id="cust-notes" rows="2" placeholder="Especificaciones, dudas o consultas sobre el encargo..."></textarea>
+          <textarea id="cust-notes" rows="2" placeholder="Especificaciones, dudas o consultas..."></textarea>
         </label>
 
-        <button type="submit" class="btn btn-whatsapp-submit">
-          💬 Confirmar Pedido por WhatsApp
+        <button type="submit" class="btn-whatsapp-submit">
+          💬 Enviar Pedido por WhatsApp
         </button>
       </form>
     </div>
